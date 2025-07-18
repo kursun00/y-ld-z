@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini Sürpriz Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <canvas id="rain-canvas"></canvas>
+  <img id="background" src="arkaplan.png" alt="Arka Plan" />
+
+  <div class="container">
+    <h1 class="title">Merhaba Yıldız 💜</h1>
+    <button id="music-btn">🎵 Müziği Başlat</button>
+
+    <div class="games">
+      <button onclick="startLoveGame()">💌 Sev Beni</button>
+      <button onclick="startCatchHeart()">💘 Kaçan Kalp</button>
+      <button onclick="startFindButton()">🔍 Doğru Butonu Bul</button>
+    </div>
+
+    <div id="personal-message" class="note" style="cursor:pointer;">
+      💌 <span id="message-text">Yıldız, sen benim için çok özelsin. ❤️ (Tıklayarak mesajı değiştir)</span>
+    </div>
+
+    <div class="hidden surprise" id="daisy">
+      <img src="papatya.gif" alt="Papatya" />
+    </div>
+
+    <div class="hidden surprise" id="bear">
+      <img src="pelus.gif" alt="Peluş Ayıcık" />
+    </div>
+
+    <div class="note hidden" id="heart-note">
+      💖 "Sen bu dünyanın en güzel melodisisin."
+    </div>
+
+    <div class="note" id="nice-words">
+      💬 <span id="word-text">"Hayat, sevgiyle güzelleşir."</span>
+    </div>
+  </div>
+
+  <audio id="bg-music" src="muzik.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
