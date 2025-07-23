@@ -120,7 +120,7 @@ let loveCount = 0;
 function startLoveGame() {
   const note = document.getElementById("heart-note");
   loveCount++;
-  note.textContent = `💖 Yağmur, ${loveCount} kere sevildin!`;
+  note.textContent = `💖 Narin, ${loveCount} kere sevildin!`;
   note.classList.remove("hidden");
 }
 
@@ -143,7 +143,7 @@ function startFindButton() {
     buttonsClicked++;
   } else if (buttonsClicked === 1) {
     daisy.classList.remove("hidden");
-    alert("Doğru butonu buldun! Papatya çıktı 🌼");
+    alert("Doğru butonu buldun! Lale çıktı 🌷");
     buttonsClicked = 0;
   }
 }
@@ -172,7 +172,7 @@ const personalMsg = document.getElementById('personal-message');
 const messageText = document.getElementById('message-text');
 
 const messages = [
-  "Yağmur, sen benim için çok özelsin. ❤️",
+  "Narin, sen benim için çok özelsin. ❤️",
   "Her günüm seninle daha güzel.",
   "Sana her baktığımda gülümserim.",
   "Seninle her an bir macera.",
