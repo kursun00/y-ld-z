@@ -134,7 +134,7 @@ function startCatchHeart() {
   };
 }
 
-// Doğru Butonu Bul - ilk tıklamada uyarı, ikinci tıklamada papatya çıkar
+// Doğru Butonu Bul - ilk tıklamada uyarı, ikinci tıklamada lale çıkar
 let buttonsClicked = 0;
 function startFindButton() {
   const daisy = document.getElementById("daisy");
