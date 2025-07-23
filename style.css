@@ -4,7 +4,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0f0f0f, #3f0d57);
+  background: linear-gradient(135deg, #0a0a2a, #1d4ed8); /* koyu mavi tonlar */
   color: white;
   height: 100%;
   overflow-y: auto; /* Kaydırma aktif */
@@ -17,7 +17,7 @@ html {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  opacity: 0.15; /* Opaklık düşürüldü ki yağmur belli olsun */
+  opacity: 0.15;
   z-index: -2;
 }
 
@@ -32,38 +32,38 @@ html {
 
 .title {
   font-size: 2.5rem;
-  color: #d9a7ff;
-  text-shadow: 0 0 10px #a855f7;
+  color: #c7e2ff; /* açık mavi */
+  text-shadow: 0 0 10px #60a5fa; /* parlak mavi */
 }
 
 button {
   margin: 10px;
   padding: 12px 20px;
   font-size: 1.1rem;
-  background: #6b21a8;
+  background: #2563eb; /* mavi */
   color: white;
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  box-shadow: 0 0 10px #a855f7;
+  box-shadow: 0 0 10px #60a5fa;
   transition: 0.3s;
 }
 
 @keyframes buttonGlow {
   0%, 100% {
-    box-shadow: 0 0 8px #a855f7, 0 0 20px #d9a7ff;
+    box-shadow: 0 0 8px #60a5fa, 0 0 20px #93c5fd;
     transform: scale(1);
   }
   50% {
-    box-shadow: 0 0 15px #d9a7ff, 0 0 30px #a855f7;
+    box-shadow: 0 0 15px #93c5fd, 0 0 30px #60a5fa;
     transform: scale(1.08);
   }
 }
 
 button:hover {
   animation: buttonGlow 1.5s ease-in-out infinite;
-  background: linear-gradient(45deg, #a855f7, #d9a7ff);
-  color: #fff;
+  background: linear-gradient(45deg, #60a5fa, #ffffff);
+  color: #0a0a2a;
 }
 
 .games {
@@ -88,8 +88,8 @@ button:hover {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  color: #ffb3fc;
-  box-shadow: 0 0 10px #a855f7;
+  color: #c7e2ff; /* açık mavi */
+  box-shadow: 0 0 10px #ffffff;
   font-size: 1.1rem;
 }
 
@@ -100,7 +100,7 @@ button:hover {
 }
 
 #personal-message:hover {
-  background-color: rgba(255, 179, 252, 0.3);
+  background-color: rgba(199, 226, 255, 0.3);
 }
 
 @keyframes scaleFade {
@@ -121,9 +121,9 @@ button:hover {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 0; /* Z-index yükseltildi ki backgroundun üstünde olsun */
+  z-index: 0;
   pointer-events: none;
-  opacity: 0.7; /* Daha görünür oldu */
+  opacity: 0.7;
 }
 
 @media only screen and (max-width: 768px) {
